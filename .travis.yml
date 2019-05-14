@@ -42,3 +42,13 @@ before_script:
 script:
   - "./gradlew clean build connectedCheck -PdisablePreDex --stacktrace"
 
+deploy:
+  provider: releases
+  file: calculator.apk
+  skip_cleanup: true
+  on:
+    repo: handsome711/android_calculator
+    tags: true
+    jdk: oraclejdk8
+api_key:
+  secure: "my_android_calculator"
