@@ -51,4 +51,4 @@ deploy:
     tags: true
     jdk: oraclejdk8
 api_key:
-  secure: "my_android_calculator"
+  secure: 96775e8b6b111f84a64bd57b635a609ddb7957cc
